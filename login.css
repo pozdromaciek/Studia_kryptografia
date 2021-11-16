@@ -1,0 +1,117 @@
+html,body {
+	margin:0;
+	width: 100vw;
+	font-family: 'Barlow', sans-serif;
+	background-color: #EEE2DC;
+	background-image: url('bg.jpg');
+	background-size: cover;
+}
+.loginBox{	
+position: absolute;
+padding:0;
+  width: 800px;
+  height: 600px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -400px;
+  border-radius: 0px;
+background: rgb(199,0,164);
+background: linear-gradient(320deg, rgba(199,0,164,1) 6%, rgba(18,60,105,0.9) 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color:white;
+  -webkit-box-shadow: 0px 0px 24px 0px black;
+-moz-box-shadow: 0px 0px 24px 0px black;
+box-shadow: 0px 0px 24px 0px black;
+}
+.loginBox h1{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
+
+}
+.textInput  {
+	background-color: transparent;
+	border: none;
+	height: 50px;
+	width: 300px;
+	margin-bottom: 40px;
+	border: 3px solid white;
+	border-radius: 40px;
+	padding-left: 20px;
+	color: white;
+	font-size: 20px;
+}
+.textInput:focus{
+	border: 3px solid white;
+}
+.textInput:active{
+	border: 3px solid white;
+}
+
+.loginButton {
+	width: 200px;
+	height: 50px;
+	border:0px;
+	border-radius: 40px;
+	background-color: white;
+	color:#123C69;
+	text-transform: uppercase;
+	font-size: 23px;
+	font-weight: 700;
+	cursor: pointer;
+} 
+.loginButton:hover{
+
+}
+.singupButton {
+	margin-top: 80px;
+	width: 300px;
+	height: 40px;
+	border:0px;
+	border-radius: 20px;
+	background-color: #ECD7B7;
+	color:#AC3B61;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.loginBox p{
+	cursor: pointer;
+}
+.loginBox p:hover{
+	font-weight: 600;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 3px solid  white;
+  -webkit-text-fill-color: #123C69;
+  -webkit-box-shadow: 0 0 0px 0px  white inset;
+  transition: background-color 5000s ease-in-out 0s;
+  color: white;
+}
+
+@media (max-width: 650px) {
+	body {
+		overflow-x: hidden;
+	}
+	.loginBox{
+		width: 100vw;
+		height: 100vh;
+		top:0;
+		left: 0;
+		margin: 0;
+	}
+}

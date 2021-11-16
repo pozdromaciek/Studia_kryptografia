@@ -1,0 +1,93 @@
+html,body{
+	margin: 0;
+	width: 100vw;
+	font-family: 'Barlow', sans-serif;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.mainContainer {
+	background-color: #EEE2DC;
+	width: 81%;
+	height: 98vh;
+	padding-top: 2vh;
+	padding-left: 2%;
+	padding-right: 2%;
+	float: right;
+	position: relative;
+
+}
+.leftMenu {
+	background-color: #BAB2B5;
+	width: 15%;
+	height: 100vh;
+	float: left;
+	position: absolute;
+	-webkit-box-shadow: 3px 2px 24px 5px rgba(0,0,0,0.4); 
+	box-shadow: 3px 2px 24px 5px rgba(0,0,0,0.4);
+	z-index: 10;
+}
+.leftMenuHead {
+	width: 90%;
+	height: auto;
+	padding-left: 10%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	background-color: #123C69;
+	color:  #BAB2B5;
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.menuPosition{
+	width: 96%;
+	padding-left: 4%;
+	font-size: 18px;
+	line-height: 50px;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.3s ease-in;
+}
+.menuPosition:hover{
+		font-weight: 700;
+}
+.dropdownContent{
+	display: none;
+	padding-left: 8%;
+	width:92%;
+	margin-bottom: 20px;
+	font-size: 17px;
+}
+.dropdownContent li{
+	list-style: none;
+	cursor: pointer;
+	margin-bottom: 3px;
+	transition: all 0.3s ease-in;
+}
+.dropdownContent li:hover {
+	font-weight: 600;
+}
+.show{
+	display: block;
+}
+
+
+@media (max-width: 48em) {
+	.leftMenu {
+		width: 60%;
+		display: none;
+	}
+	.mainContainer{
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+		position: absolute;
+	}
+}
