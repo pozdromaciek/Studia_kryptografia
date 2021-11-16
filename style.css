@@ -75,7 +75,7 @@ html,body{
 	font-weight: 600;
 }
 .show{
-	display: block;
+	display: block !important;
 }
 
 

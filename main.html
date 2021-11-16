@@ -19,7 +19,7 @@
 		// Close the dropdown if the user clicks outside of it
 		window.onclick = function(event) {
 		  if (!event.target.matches('.dropdownButton')) {
-		    var dropdowns = document.getElementsByClassName("dropdown");
+		    var dropdowns = document.getElementsByClassName("dropdownContent");
 		    var i;
 		    for (i = 0; i < dropdowns.length; i++) {
 		      var openDropdown = dropdowns[i];
@@ -30,10 +30,18 @@
 		  }
 		}
 	</script>
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function showMenu() {
+		  document.getElementById("menu").classList.toggle("show");
+		}
+	</script>
 </head>
 <body>
-	<div class="leftMenu noselect">
-		<div class="leftMenuHead">
+	<button class="showmenu" onclick="showMenu()">Pokaz menu</button>
+	<div class="leftMenu noselect" id="menu">
+		<div class="leftMenuHead" >
 			<p>Panel</p>
 		</div>
 			<div class="menuPosition dropdownButton" id="dropdownButton" onclick="Dropdown()"><b>Admin</b></div>
