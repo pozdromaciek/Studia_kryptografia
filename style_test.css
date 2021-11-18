@@ -1,6 +1,7 @@
 @font-face {
   font-family: Windows95;
   src: url(font.ttf);
+  overflow-x: hidden;
 }
 html,body{
 	margin: 0;
@@ -67,6 +68,7 @@ html,body{
 	font-weight: 600;
 	cursor: pointer;
 	position: relative;
+	font-family: Windows95;
 	background-color: transparent;
 	border-style: none;
 	text-align: left;
@@ -93,6 +95,7 @@ html,body{
 }
 .show{
 	display: block !important;
+
 }
 
 .footerPanel{
