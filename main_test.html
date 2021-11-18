@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style_test.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function Dropdown() {
+		  document.getElementById("dropdown").classList.toggle("show");
+		}
+	</script>
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function showMenu() {
+		  document.getElementById("startMenu").classList.toggle("show");
+		}
+		window.onclick = function(event) {
+		  if (!event.target.matches('.showmenu')) {
+		    var menu = document.getElementsByClassName("startMenu");
+		    var i;
+		    for (i = 0; i < menu.length; i++) {
+		      var openDropdown = menu[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+	</script>
+</head>
+<body>
+	
+	<div class="mainContainer">
+	<div class="mainContainerTitle">Window
+		<button class="closeButton">x</button>
+	</div>
+	<div class="mainContainerContent">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur mauris eu tristique vestibulum. Sed auctor at odio id lacinia. Nam vitae lorem eget magna rhoncus facilisis ut quis eros. Proin pulvinar venenatis lorem non vestibulum. Proin nec mi in sem aliquet eleifend. Etiam sit amet dolor a felis fermentum vestibulum. Sed dictum pellentesque scelerisque. Quisque at cursus lectus, nec mollis tortor.
+
+		Maecenas rutrum lectus pulvinar tristique interdum. Donec risus neque, facilisis ac mauris vel, consequat molestie diam. Cras commodo mattis lorem, at vehicula nulla vehicula lobortis. Mauris arcu ante, elementum sed mi quis, tincidunt porttitor ligula. In et sagittis enim. Fusce venenatis malesuada turpis, ut dapibus neque ultricies et. In mollis congue velit posuere hendrerit. Duis non felis sit amet augue venenatis volutpat. Vivamus malesuada diam sem, in dignissim lacus malesuada sagittis. Nulla risus libero, ornare vitae ipsum sed, dignissim semper nibh. Vivamus id mattis urna, sed posuere dolor.
+
+		In in laoreet purus, id placerat libero. Vivamus finibus, odio ut facilisis pretium, justo leo tincidunt nulla, non iaculis magna nulla eget felis. Donec mauris risus, eleifend sed lobortis vel, egestas id lacus. Duis iaculis ut neque id tincidunt. Sed sagittis accumsan est. Phasellus egestas turpis dui, at ultricies urna tempus in. Cras ex velit, viverra id magna quis, facilisis accumsan velit. Proin faucibus rutrum dignissim. Cras et urna quis arcu posuere mollis. Praesent iaculis mi nec lobortis porttitor.
+
+		Cras eu interdum risus. Cras ut aliquet odio, vel vehicula orci. In hac habitasse platea dictumst. Cras tincidunt vel justo ut malesuada. Fusce porttitor sapien libero, eget interdum sapien porta non. Curabitur eu mauris odio. Praesent vulputate, turpis commodo blandit pretium, lacus nulla tempor quam, tincidunt tempus massa eros quis lorem. Praesent euismod facilisis ornare. Cras porttitor sapien vitae lectus consectetur efficitur. Ut tempus id neque sit amet convallis. Nulla facilisi. Suspendisse non leo sed magna ultricies suscipit. Nullam fermentum, diam et elementum venenatis, ante erat porta odio, nec venenatis dui dolor eu felis. Maecenas vehicula viverra varius. Sed ut turpis nec eros elementum vestibulum non in erat. Ut malesuada lacinia odio, vel posuere arcu luctus quis.
+
+		Nam vitae risus ac metus scelerisque mollis vel nec justo. Aliquam nec est nisl. Fusce orci massa, facilisis vel lorem vitae, semper vulputate nulla. Donec vestibulum elementum justo sit amet vehicula. Sed feugiat auctor erat, dictum finibus urna bibendum sed. Donec eleifend fermentum massa, sed consectetur est tempor sed. Curabitur sed ligula lorem. Sed at tincidunt magna, sed malesuada neque. Donec ut pulvinar metus, sed ullamcorper lorem. Proin semper maximus hendrerit. Fusce varius mollis aliquam. Phasellus rhoncus euismod dolor eu blandit. Vivamus ut sodales lacus, aliquet blandit mi. Nulla consectetur eget sapien eu efficitur.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur mauris eu tristique vestibulum. Sed auctor at odio id lacinia. Nam vitae lorem eget magna rhoncus facilisis ut quis eros. Proin pulvinar venenatis lorem non vestibulum. Proin nec mi in sem aliquet eleifend. Etiam sit amet dolor a felis fermentum vestibulum. Sed dictum pellentesque scelerisque. Quisque at cursus lectus, nec mollis tortor.
+
+		Maecenas rutrum lectus pulvinar tristique interdum. Donec risus neque, facilisis ac mauris vel, consequat molestie diam. Cras commodo mattis lorem, at vehicula nulla vehicula lobortis. Mauris arcu ante, elementum sed mi quis, tincidunt porttitor ligula. In et sagittis enim. Fusce venenatis malesuada turpis, ut dapibus neque ultricies et. In mollis congue velit posuere hendrerit. Duis non felis sit amet augue venenatis volutpat. Vivamus malesuada diam sem, in dignissim lacus malesuada sagittis. Nulla risus libero, ornare vitae ipsum sed, dignissim semper nibh. Vivamus id mattis urna, sed posuere dolor.
+
+		In in laoreet purus, id placerat libero. Vivamus finibus, odio ut facilisis pretium, justo leo tincidunt nulla, non iaculis magna nulla eget felis. Donec mauris risus, eleifend sed lobortis vel, egestas id lacus. Duis iaculis ut neque id tincidunt. Sed sagittis accumsan est. Phasellus egestas turpis dui, at ultricies urna tempus in. Cras ex velit, viverra id magna quis, facilisis accumsan velit. Proin faucibus rutrum dignissim. Cras et urna quis arcu posuere mollis. Praesent iaculis mi nec lobortis porttitor.
+
+		Cras eu interdum risus. Cras ut aliquet odio, vel vehicula orci. In hac habitasse platea dictumst. Cras tincidunt vel justo ut malesuada. Fusce porttitor sapien libero, eget interdum sapien porta non. Curabitur eu mauris odio. Praesent vulputate, turpis commodo blandit pretium, lacus nulla tempor quam, tincidunt tempus massa eros quis lorem. Praesent euismod facilisis ornare. Cras porttitor sapien vitae lectus consectetur efficitur. Ut tempus id neque sit amet convallis. Nulla facilisi. Suspendisse non leo sed magna ultricies suscipit. Nullam fermentum, diam et elementum venenatis, ante erat porta odio, nec venenatis dui dolor eu felis. Maecenas vehicula viverra varius. Sed ut turpis nec eros elementum vestibulum non in erat. Ut malesuada lacinia odio, vel posuere arcu luctus quis.
+
+		Nam vitae risus ac metus scelerisque mollis vel nec justo. Aliquam nec est nisl. Fusce orci massa, facilisis vel lorem vitae, semper vulputate nulla. Donec vestibulum elementum justo sit amet vehicula. Sed feugiat auctor erat, dictum finibus urna bibendum sed. Donec eleifend fermentum massa, sed consectetur est tempor sed. Curabitur sed ligula lorem. Sed at tincidunt magna, sed malesuada neque. Donec ut pulvinar metus, sed ullamcorper lorem. Proin semper maximus hendrerit. Fusce varius mollis aliquam. Phasellus rhoncus euismod dolor eu blandit. Vivamus ut sodales lacus, aliquet blandit mi. Nulla consectetur eget sapien eu efficitur.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur mauris eu tristique vestibulum. Sed auctor at odio id lacinia. Nam vitae lorem eget magna rhoncus facilisis ut quis eros. Proin pulvinar venenatis lorem non vestibulum. Proin nec mi in sem aliquet eleifend. Etiam sit amet dolor a felis fermentum vestibulum. Sed dictum pellentesque scelerisque. Quisque at cursus lectus, nec mollis tortor.
+
+		Maecenas rutrum lectus pulvinar tristique interdum. Donec risus neque, facilisis ac mauris vel, consequat molestie diam. Cras commodo mattis lorem, at vehicula nulla vehicula lobortis. Mauris arcu ante, elementum sed mi quis, tincidunt porttitor ligula. In et sagittis enim. Fusce venenatis malesuada turpis, ut dapibus neque ultricies et. In mollis congue velit posuere hendrerit. Duis non felis sit amet augue venenatis volutpat. Vivamus malesuada diam sem, in dignissim lacus malesuada sagittis. Nulla risus libero, ornare vitae ipsum sed, dignissim semper nibh. Vivamus id mattis urna, sed posuere dolor.
+
+		In in laoreet purus, id placerat libero. Vivamus finibus, odio ut facilisis pretium, justo leo tincidunt nulla, non iaculis magna nulla eget felis. Donec mauris risus, eleifend sed lobortis vel, egestas id lacus. Duis iaculis ut neque id tincidunt. Sed sagittis accumsan est. Phasellus egestas turpis dui, at ultricies urna tempus in. Cras ex velit, viverra id magna quis, facilisis accumsan velit. Proin faucibus rutrum dignissim. Cras et urna quis arcu posuere mollis. Praesent iaculis mi nec lobortis porttitor.
+
+		Cras eu interdum risus. Cras ut aliquet odio, vel vehicula orci. In hac habitasse platea dictumst. Cras tincidunt vel justo ut malesuada. Fusce porttitor sapien libero, eget interdum sapien porta non. Curabitur eu mauris odio. Praesent vulputate, turpis commodo blandit pretium, lacus nulla tempor quam, tincidunt tempus massa eros quis lorem. Praesent euismod facilisis ornare. Cras porttitor sapien vitae lectus consectetur efficitur. Ut tempus id neque sit amet convallis. Nulla facilisi. Suspendisse non leo sed magna ultricies suscipit. Nullam fermentum, diam et elementum venenatis, ante erat porta odio, nec venenatis dui dolor eu felis. Maecenas vehicula viverra varius. Sed ut turpis nec eros elementum vestibulum non in erat. Ut malesuada lacinia odio, vel posuere arcu luctus quis.
+
+		Nam vitae risus ac metus scelerisque mollis vel nec justo. Aliquam nec est nisl. Fusce orci massa, facilisis vel lorem vitae, semper vulputate nulla. Donec vestibulum elementum justo sit amet vehicula. Sed feugiat auctor erat, dictum finibus urna bibendum sed. Donec eleifend fermentum massa, sed consectetur est tempor sed. Curabitur sed ligula lorem. Sed at tincidunt magna, sed malesuada neque. Donec ut pulvinar metus, sed ullamcorper lorem. Proin semper maximus hendrerit. Fusce varius mollis aliquam. Phasellus rhoncus euismod dolor eu blandit. Vivamus ut sodales lacus, aliquet blandit mi. Nulla consectetur eget sapien eu efficitur.</p>
+		</div>
+	</div>
+	<div class="startMenu" id="startMenu">
+		<button class="menuPosition"><img src="files.png" width="35px" style="float: left; margin-right: 20px;">Eksplorator</button>
+		<button class="menuPosition"><img src="admin.png" width="35px" style="float: left; margin-right: 20px;">Panel sterowania</button>
+		<button class="menuPosition"><img src="admin2.png" width="35px" style="float: left; margin:auto;margin-right: 20px;">Narzędzia administracyjne</button>
+		<button class="menuPosition">test</div>
+
+
+	</div>
+	<div class="footerPanel">
+		<button class="startMenuButton showmenu" id="menu" onclick="showMenu()"><img src="logo.png" width="15px" style="float: left; margin-right: 10px;">Start</button>
+		<div class="currentTime" id="currentTime"></div>
+	</div>
+
+</body>
+<script>
+	getTime();
+	function getTime(){
+	var timePlaceholder =  document.getElementById('currentTime');
+	var today = new Date();
+	var time = today.getHours() + ":" + today.getMinutes();
+   	timePlaceholder.innerHTML = time;
+};
+setInterval(getTime, 1000);
+</script>
+</html>
